@@ -1,0 +1,26 @@
+{
+  "skill_name": "keyword-hook-research",
+  "evals": [
+    {
+      "id": 0,
+      "name": "pasted-transcript-claude-code",
+      "prompt": "เพิ่งถ่ายคลิปเสร็จ EP12 ยาวประมาณ 50 วิ เนื้อหาคือผมโชว์วิธีใช้ Claude Code ลากโฟลเดอร์ Downloads ที่มีไฟล์รก ๆ 400 กว่าไฟล์เข้าไป แล้วสั่งให้มันจัดหมวดเป็นโฟลเดอร์ตามประเภทไฟล์กับเดือน ใช้เวลา 2 นาทีเสร็จ กลุ่มคนดูคือมนุษย์ออฟฟิศไทยที่ไม่ใช่โปรแกรมเมอร์ ไม่เคยเปิด terminal มาก่อน จะลง TikTok / FB / IG ช่วยหา keyword กับ hook ให้หน่อยว่าควรใช้คำไหน",
+      "expected_output": "Content fingerprint restated; 3 platform agents spawned; keyword table with only relevant keywords (ตรง/เกี่ยว) and a 'why relevant to this content' column tied to file organizing / non-programmer / Claude Code; 3-5 ready-to-use Thai hooks per platform that differ by platform; a closing line on which platform is strongest.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "irrelevant-trend-must-be-dropped",
+      "prompt": "ผมทำร้านอาหารเล็ก ๆ ในเชียงใหม่ อยากทำคลิปสอนเจ้าของร้านอาหารด้วยกันว่าทำบัญชีรายรับรายจ่ายรายวันยังไงใน Google Sheet ให้รู้ว่าเมนูไหนกำไรจริง ไม่ได้ใช้ AI ไม่ได้ใช้โปรแกรมอะไรพิเศษ ใช้ Sheet เปล่า ๆ อยากรู้ว่าตอนนี้ควรใช้ keyword อะไรบ้างใน TikTok Facebook IG แล้วก็ hook ที่ควรพูด 3 วิแรก",
+      "expected_output": "Should NOT push generic hot AI/tech keywords onto this content. Keyword table restricted to restaurant/SME/accounting/Google Sheets relevance. Hooks are about food-cost and profit-per-menu, not about AI. Dropped keywords are not enumerated in a long appendix.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "vague-topic-needs-narrowing",
+      "prompt": "อยากทำคลิปเรื่อง AI ครับ ช่วยหา keyword ที่มาแรงตอนนี้ให้หน่อย ทั้ง tiktok fb ig",
+      "expected_output": "Should recognize the topic is too vague to filter against, ask ONE narrowing question about the specific promise to the viewer (or state a clear assumption and proceed). Should not dump a generic trending-AI-keyword list with no relevance filtering.",
+      "files": []
+    }
+  ]
+}
