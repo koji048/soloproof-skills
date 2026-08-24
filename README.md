@@ -2,42 +2,64 @@
 
 Skill library ประกอบคอร์ส SOLO PROOF — ติดตั้งครั้งเดียวได้ครบชุด กด update รับของใหม่ได้ตลอด
 
-## สำหรับผู้เรียน — ติดตั้ง 2 บรรทัด (Claude Code)
+มี 2 วิธีติดตั้ง เลือกตามเครื่องมือที่ใช้:
+
+| ใช้อะไรอยู่ | วิธีติดตั้ง |
+|---|---|
+| แอป Claude (Desktop / claude.ai) | **วิธีที่ 1: ดาวน์โหลด zip แล้วอัปโหลด** |
+| Claude Code (terminal) | **วิธีที่ 2: ติดตั้งจาก terminal** — ได้ครบ 13 ตัวในคำสั่งเดียว |
+
+---
+
+## วิธีที่ 1 — แอป Claude: ดาวน์โหลด zip แล้วอัปโหลด
+
+1. โหลดไฟล์ zip ของ skill ที่ต้องการจากหน้า **[Releases](https://github.com/koji048/soloproof-skills/releases/latest)** (มีครบทั้ง 13 ตัว แยกไฟล์ให้แล้ว)
+2. เปิดแอป Claude → **Settings → Capabilities** → เปิด **Code execution and file creation**
+3. ไปที่ **Skills** → กดปุ่ม **+** → **Upload a skill** → เลือกไฟล์ zip
+4. ทำซ้ำทีละตัวตามที่ต้องใช้ (ไม่ต้องลงครบทุกตัวก็ได้ — ดูตารางด้านล่างว่าตัวไหนใช้ช่วงไหน)
+
+skill ที่เปิดในแอปจะ sync ลง Claude Code อัตโนมัติด้วย
+
+ลิงก์ตรงรายตัว (คลิกโหลดได้เลย):
+
+| skill | ดาวน์โหลด |
+|---|---|
+| biz-folder | [biz-folder.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/biz-folder.zip) |
+| strength-interview | [strength-interview.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/strength-interview.zip) |
+| million-dollar-weekend | [million-dollar-weekend.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/million-dollar-weekend.zip) |
+| market-validation | [market-validation.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/market-validation.zip) |
+| offer-design | [offer-design.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/offer-design.zip) |
+| grand-slam-offer | [grand-slam-offer.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/grand-slam-offer.zip) |
+| sales-page-builder | [sales-page-builder.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/sales-page-builder.zip) |
+| my-brand-style | [my-brand-style.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/my-brand-style.zip) |
+| keyword-hook-research | [keyword-hook-research.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/keyword-hook-research.zip) |
+| launch-7-days | [launch-7-days.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/launch-7-days.zip) |
+| aar | [aar.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/aar.zip) |
+| agent-orchestration | [agent-orchestration.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/agent-orchestration.zip) |
+| gauntlet-loop | [gauntlet-loop.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/gauntlet-loop.zip) |
+
+หรือโหลดรวมทุกตัวไฟล์เดียว: [soloproof-all-skills.zip](https://github.com/koji048/soloproof-skills/releases/latest/download/soloproof-all-skills.zip) (แตก zip แล้วอัปโหลดทีละโฟลเดอร์)
+
+---
+
+## วิธีที่ 2 — Claude Code: ติดตั้งจาก terminal
+
+เปิด Claude Code แล้วพิมพ์ 2 บรรทัดนี้:
 
 ```
 /plugin marketplace add koji048/soloproof-skills
 /plugin install soloproof@soloproof-skills
 ```
 
-เสร็จแล้วพิมพ์ `/reload-plugins` หนึ่งครั้ง แล้วเช็คด้วย `/plugin` — ต้องเห็น skill ครบทุกตัว
+เสร็จแล้วพิมพ์ `/reload-plugins` หนึ่งครั้ง แล้วเช็คด้วย `/plugin` — ต้องเห็น skill ครบทั้ง 13 ตัว
 
-รับของเวอร์ชันใหม่ภายหลัง: `/plugin marketplace update soloproof-skills`
+รับของเวอร์ชันใหม่ภายหลัง:
 
-### ใช้แอป Claude (ไม่ใช้ terminal)
-
-ใช้ไฟล์ zip รายตัวที่แจกในคอร์สแทน: Settings → Capabilities → เปิด **Code execution and file creation**
-→ Skills → ปุ่ม **+** → Upload a skill → เลือกไฟล์ zip
-(skill ที่เปิดในแอปจะ sync ลง Claude Code อัตโนมัติด้วย)
+```
+/plugin marketplace update soloproof-skills
+```
 
 ---
-
-## สำหรับตั้ม — วิธีเอา skill ใส่ repo นี้
-
-1. แต่ละ skill = 1 โฟลเดอร์ใต้ `plugins/soloproof/skills/` ข้างในมี `SKILL.md` (+ไฟล์ประกอบถ้ามี)
-   ดูแม่แบบใน `_template-skill/` — **ลบโฟลเดอร์ _template-skill ทิ้งก่อน push จริง**
-2. ชื่อโฟลเดอร์ = ชื่อ skill: ตัวพิมพ์เล็ก คั่นด้วย `-` เช่น `check-idea`, `build-offer`
-3. push ขึ้น GitHub — repo อยู่ที่ https://github.com/koji048/soloproof-skills แล้ว
-4. ทดสอบก่อนแจก: เครื่องตัวเอง รัน 2 บรรทัดข้างบน แล้วลองเรียกใช้ skill สัก 2 ตัว
-5. แก้ skill ภายหลัง: แก้ไฟล์ → push → บอกผู้เรียนรัน `/plugin marketplace update soloproof-skills`
-
-### เช็คลิสต์ก่อนวันแจก Track 0
-
-- [x] skill ครบ 13 โฟลเดอร์
-- [ ] ทดสอบติดตั้งจริงบน Windows 1 เครื่อง + Mac 1 เครื่อง
-- [ ] ทำ zip รายตัว (zip ที่ *ราก* คือโฟลเดอร์ skill) สำหรับเลนแอป → เก็บในโฟลเดอร์แจกไฟล์ของคอร์ส
-- [ ] เอาชื่อ skill ทั้ง 13 ไปเติมใน "ใบทดลองก่อนวันงาน" ส่วนที่ 4 และสไลด์ Skill Studio
-- [ ] USB สำรอง 1 อัน ใส่ zip ทุกตัว เผื่อ Wi-Fi ห้องล่ม
-
 
 ## skill ทั้ง 13 ตัว — ใช้ช่วงไหนของคอร์ส
 
@@ -59,19 +81,47 @@ Skill library ประกอบคอร์ส SOLO PROOF — ติดตั�
 
 หมายเหตุ: grand-slam-offer, keyword-hook-research, agent-orchestration, gauntlet-loop ทำงานเต็มรูปแบบใน Cowork/Claude Code — ในแชทธรรมดาจะสลับเป็นโหมดเรียงคิวอัตโนมัติ (เขียนไว้ท้าย skill แล้ว)
 
+---
+
+## สำหรับตั้ม — วิธีดูแล repo นี้
+
+### เพิ่ม/แก้ skill
+
+1. แต่ละ skill = 1 โฟลเดอร์ใต้ `plugins/soloproof/skills/` ข้างในมี `SKILL.md` (+ไฟล์ประกอบถ้ามี)
+2. ชื่อโฟลเดอร์ = ชื่อ skill: ตัวพิมพ์เล็ก คั่นด้วย `-` เช่น `check-idea`, `build-offer`
+3. แก้แล้ว push — ผู้เรียนเลน terminal รัน `/plugin marketplace update soloproof-skills` ก็ได้ของใหม่
+
+### ออก zip ชุดใหม่ (เลนแอป Claude)
+
+```bash
+./scripts/make-zips.sh
+gh release create vX.Y.Z dist/*.zip --title "vX.Y.Z" --notes "อัปเดตอะไร เขียนตรงนี้"
+```
+
+ลิงก์ `releases/latest/download/...` ใน README จะชี้เวอร์ชันใหม่ให้เองอัตโนมัติ ไม่ต้องแก้ลิงก์
+
+### เช็คลิสต์ก่อนวันแจก Track 0
+
+- [x] skill ครบ 13 โฟลเดอร์
+- [x] zip รายตัวขึ้น GitHub Release แล้ว (เลนแอป Claude)
+- [ ] ทดสอบติดตั้งจริงบน Windows 1 เครื่อง + Mac 1 เครื่อง
+- [ ] เอาชื่อ skill ไปเติมใน "ใบทดลองก่อนวันงาน" ส่วนที่ 4 และสไลด์ Skill Studio
+- [ ] USB สำรอง 1 อัน ใส่ zip ทุกตัว (โหลดจากหน้า Releases) เผื่อ Wi-Fi ห้องล่ม
+
 ## โครง repo
 
 ```
 soloproof-skills/
 ├── .claude-plugin/
-│   └── marketplace.json        ← ประกาศร้าน
+│   └── marketplace.json        ← ประกาศร้าน (เลน terminal)
 ├── plugins/
 │   └── soloproof/
 │       ├── .claude-plugin/
 │       │   └── plugin.json     ← ประกาศชุด skill
 │       └── skills/
-│           ├── <skill-1>/SKILL.md
-│           ├── ...
-│           └── <skill-10>/SKILL.md
+│           ├── <skill>/SKILL.md
+│           └── ...
+├── scripts/
+│   └── make-zips.sh            ← สร้าง zip แจก (เลนแอป)
 └── README.md
 ```
