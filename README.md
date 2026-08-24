@@ -5,7 +5,7 @@ Skill library ประกอบคอร์ส SOLO PROOF — ติดตั�
 ## สำหรับผู้เรียน — ติดตั้ง 2 บรรทัด (Claude Code)
 
 ```
-/plugin marketplace add <GITHUB_USERNAME>/soloproof-skills
+/plugin marketplace add koji048/soloproof-skills
 /plugin install soloproof@soloproof-skills
 ```
 
@@ -26,8 +26,7 @@ Skill library ประกอบคอร์ส SOLO PROOF — ติดตั�
 1. แต่ละ skill = 1 โฟลเดอร์ใต้ `plugins/soloproof/skills/` ข้างในมี `SKILL.md` (+ไฟล์ประกอบถ้ามี)
    ดูแม่แบบใน `_template-skill/` — **ลบโฟลเดอร์ _template-skill ทิ้งก่อน push จริง**
 2. ชื่อโฟลเดอร์ = ชื่อ skill: ตัวพิมพ์เล็ก คั่นด้วย `-` เช่น `check-idea`, `build-offer`
-3. push ขึ้น GitHub เป็น **public repo** ชื่อ `soloproof-skills`
-   แล้วแก้ `<GITHUB_USERNAME>` ใน README นี้ให้เป็นชื่อจริง
+3. push ขึ้น GitHub — repo อยู่ที่ https://github.com/koji048/soloproof-skills แล้ว
 4. ทดสอบก่อนแจก: เครื่องตัวเอง รัน 2 บรรทัดข้างบน แล้วลองเรียกใช้ skill สัก 2 ตัว
 5. แก้ skill ภายหลัง: แก้ไฟล์ → push → บอกผู้เรียนรัน `/plugin marketplace update soloproof-skills`
 
@@ -36,7 +35,7 @@ Skill library ประกอบคอร์ส SOLO PROOF — ติดตั�
 - [x] skill ครบ 13 โฟลเดอร์
 - [ ] ทดสอบติดตั้งจริงบน Windows 1 เครื่อง + Mac 1 เครื่อง
 - [ ] ทำ zip รายตัว (zip ที่ *ราก* คือโฟลเดอร์ skill) สำหรับเลนแอป → เก็บในโฟลเดอร์แจกไฟล์ของคอร์ส
-- [ ] เอาชื่อ skill ทั้ง 10 ไปเติมใน "ใบทดลองก่อนวันงาน" ส่วนที่ 4 และสไลด์ Skill Studio
+- [ ] เอาชื่อ skill ทั้ง 13 ไปเติมใน "ใบทดลองก่อนวันงาน" ส่วนที่ 4 และสไลด์ Skill Studio
 - [ ] USB สำรอง 1 อัน ใส่ zip ทุกตัว เผื่อ Wi-Fi ห้องล่ม
 
 
