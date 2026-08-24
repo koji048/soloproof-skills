@@ -1,0 +1,18 @@
+{
+  "name": "soloproof-skills",
+  "owner": {
+    "name": "Tum",
+    "email": "t.chollavorn@gmail.com"
+  },
+  "metadata": {
+    "description": "Skill library ประกอบคอร์ส SOLO PROOF — เช็คไอเดีย ปั้นข้อเสนอ โพสต์ขาย",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "soloproof",
+      "source": "./plugins/soloproof",
+      "description": "ชุด skill 13 ตัวของคอร์ส SOLO PROOF — ติดตั้งครั้งเดียวได้ครบชุด อัปเดตได้ตลอด"
+    }
+  ]
+}
